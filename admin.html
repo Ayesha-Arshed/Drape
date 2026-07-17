@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drape — Admin</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -164,21 +164,27 @@
         </div>
     </div>
 
+   
     <script>
-        const adminHamburger = document.getElementById('adminHamburger');
-        const sidebar = document.getElementById('sidebar');
+    const adminHamburger = document.getElementById('adminHamburger');
+    const sidebar = document.getElementById('sidebar');
+    const hamburgerIcon = adminHamburger.querySelector('i');
 
-        adminHamburger.addEventListener('click', () => {
-            sidebar.classList.toggle('sidebar-open');
-        });
+    adminHamburger.addEventListener('click', () => {
+        sidebar.classList.toggle('sidebar-open');
+        const isOpen = sidebar.classList.contains('sidebar-open');
+        hamburgerIcon.classList.toggle('fa-bars', !isOpen);
+        hamburgerIcon.classList.toggle('fa-xmark', isOpen);
+    });
 
-        // close sidebar when a nav link is tapped
-        document.querySelectorAll('.sidebar-nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                sidebar.classList.remove('sidebar-open');
-            });
+    document.querySelectorAll('.sidebar-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            sidebar.classList.remove('sidebar-open');
+            hamburgerIcon.classList.remove('fa-xmark');
+            hamburgerIcon.classList.add('fa-bars');
         });
-    </script>
+    });
+</script>
 
 </body>
 </html>
