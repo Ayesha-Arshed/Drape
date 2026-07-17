@@ -14,16 +14,15 @@
     <div class="admin-wrapper">
 
         <!-- Sidebar -->
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
             <div class="sidebar-logo">DRAPE</div>
 
             <nav class="sidebar-nav">
-                <a href="#" ><i class="fa-solid fa-chart-simple fa-fw"></i><span>Dashboard</span></a>
+                <a href="#"><i class="fa-solid fa-chart-simple fa-fw"></i><span>Dashboard</span></a>
                 <a href="#"><i class="fa-solid fa-shirt fa-fw"></i><span>Products</span></a>
                 <a href="#"><i class="fa-solid fa-bag-shopping fa-fw"></i><span>Orders</span></a>
                 <a href="#"><i class="fa-solid fa-users fa-fw"></i><span>Customers</span></a>
                 <a href="#"><i class="fa-solid fa-tags fa-fw"></i><span>Categories</span></a>
-                
             </nav>
 
             <a href="index.html" class="sidebar-back">
@@ -35,9 +34,14 @@
         <div class="admin-main">
 
             <header class="admin-topbar">
-                <div>
-                    <h1>Dashboard</h1>
-                    <p class="date">Wednesday, July 15, 2026</p>
+                <div class="admin-topbar-left">
+                    <button class="admin-hamburger" id="adminHamburger" aria-label="Menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div>
+                        <h1>Dashboard</h1>
+                        <p class="date">Wednesday, July 15, 2026</p>
+                    </div>
                 </div>
                 <div class="admin-profile">
                     <div class="avatar">A</div>
@@ -49,8 +53,6 @@
             </header>
 
             <div class="admin-content">
-
-        
 
                 <!-- Recent Orders -->
                 <section class="admin-section">
@@ -161,6 +163,22 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const adminHamburger = document.getElementById('adminHamburger');
+        const sidebar = document.getElementById('sidebar');
+
+        adminHamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('sidebar-open');
+        });
+
+        // close sidebar when a nav link is tapped
+        document.querySelectorAll('.sidebar-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                sidebar.classList.remove('sidebar-open');
+            });
+        });
+    </script>
 
 </body>
 </html>
