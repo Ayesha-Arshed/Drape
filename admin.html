@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drape — Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="admin-wrapper">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">DRAPE</div>
+
+            <nav class="sidebar-nav">
+                <a href="#" class="active-link"><i class="fa-solid fa-chart-simple fa-fw"></i><span>Dashboard</span></a>
+                <a href="#"><i class="fa-solid fa-shirt fa-fw"></i><span>Products</span></a>
+                <a href="#"><i class="fa-solid fa-bag-shopping fa-fw"></i><span>Orders</span></a>
+                <a href="#"><i class="fa-solid fa-users fa-fw"></i><span>Customers</span></a>
+                <a href="#"><i class="fa-solid fa-tags fa-fw"></i><span>Categories</span></a>
+                
+            </nav>
+
+            <a href="index.html" class="sidebar-back">
+                <i class="fa-solid fa-arrow-left"></i><span>Back to Store</span>
+            </a>
+        </aside>
+
+        <!-- Main -->
+        <div class="admin-main">
+
+            <header class="admin-topbar">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p class="date">Wednesday, July 15, 2026</p>
+                </div>
+                <div class="admin-profile">
+                    <div class="avatar">A</div>
+                    <div>
+                        <p class="profile-name">Ayesha</p>
+                        <p class="profile-role">Store Admin</p>
+                    </div>
+                </div>
+            </header>
+
+            <div class="admin-content">
+
+        
+
+                <!-- Recent Orders -->
+                <section class="admin-section">
+                    <div class="admin-section-title">
+                        <h2>Recent Orders</h2>
+                        <a href="#">View all →</a>
+                    </div>
+
+                    <div class="table-card">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Order</th>
+                                    <th>Customer</th>
+                                    <th>Date</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#DR-1042</td>
+                                    <td>Hira Malik</td>
+                                    <td>Jul 14, 2026</td>
+                                    <td>PKR 4,590</td>
+                                    <td><span class="status paid"><i class="fa-solid fa-circle"></i>Paid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>#DR-1041</td>
+                                    <td>Zainab Farooq</td>
+                                    <td>Jul 14, 2026</td>
+                                    <td>PKR 2,150</td>
+                                    <td><span class="status pending"><i class="fa-solid fa-circle"></i>Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td>#DR-1040</td>
+                                    <td>Bilal Ahmed</td>
+                                    <td>Jul 13, 2026</td>
+                                    <td>PKR 6,700</td>
+                                    <td><span class="status paid"><i class="fa-solid fa-circle"></i>Paid</span></td>
+                                </tr>
+                                <tr>
+                                    <td>#DR-1039</td>
+                                    <td>Areeba Khan</td>
+                                    <td>Jul 13, 2026</td>
+                                    <td>PKR 1,320</td>
+                                    <td><span class="status cancelled"><i class="fa-solid fa-circle"></i>Cancelled</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Products -->
+                <section class="admin-section">
+                    <div class="admin-section-title">
+                        <h2>Products</h2>
+                        <a href="#" class="btn-add"><i class="fa-solid fa-plus"></i> Add Product</a>
+                    </div>
+
+                    <div class="table-card">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Category</th>
+                                    <th>Price</th>
+                                    <th>Stock</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="product-cell">
+                                        <img src="girls.coat.jpg" alt="">
+                                        Classic Beige Coat
+                                    </td>
+                                    <td>Women</td>
+                                    <td>PKR 1,200</td>
+                                    <td>18</td>
+                                    <td><a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="product-cell">
+                                        <img src="shirts.jpg" alt="">
+                                        Minimal Shirt
+                                    </td>
+                                    <td>Men</td>
+                                    <td>PKR 7,000</td>
+                                    <td>4</td>
+                                    <td><a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="product-cell">
+                                        <img src="sweater.jpg" alt="">
+                                        Luxury Sweater
+                                    </td>
+                                    <td>Women</td>
+                                    <td>PKR 9,500</td>
+                                    <td>27</td>
+                                    <td><a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
