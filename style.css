@@ -1145,3 +1145,67 @@ tbody td::before {
         font-size: 12px;
     }
 }
+
+/*side bar dropdown button*/
+.sidebar-dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 13px 30px;
+    font-size: 14px;
+    letter-spacing: .5px;
+    color: #d9cdbd;
+    background: none;
+    border: none;
+    border-left: 3px solid transparent;
+    width: 100%;
+    cursor: pointer;
+    font-family: inherit;
+}
+.sidebar-dropdown-toggle:hover {
+    color: #F5EBDD;
+    background-color: rgba(245,235,221,.05);
+}
+.sidebar-dropdown-toggle i:first-child {
+    width: 18px;
+    font-size: 15px;
+    text-align: center;
+    color: #d9cdbd;
+}
+.dropdown-arrow {
+    margin-left: auto;
+    font-size: 12px;
+    transition: transform .3s ease;
+}
+.sidebar-dropdown-toggle.submenu-open .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.sidebar-submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease;
+    background: rgba(0,0,0,.15);
+}
+.sidebar-submenu.submenu-open {
+    max-height: 300px;
+}
+.sidebar-submenu a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 30px 12px 48px;
+    font-size: 13px;
+    color: #d9cdbd;
+    border-left: 3px solid transparent;
+}
+.sidebar-submenu a:hover {
+    color: #F5EBDD;
+    background-color: rgba(245,235,221,.08);
+}
+.sidebar-submenu a i {
+    width: 16px;
+    font-size: 13px;
+    text-align: center;
+    color: #d9cdbd;
+}

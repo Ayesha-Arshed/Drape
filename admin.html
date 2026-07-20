@@ -19,13 +19,26 @@
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-logo">DRAPE</div>
 
-            <nav class="sidebar-nav">
+            <!--<nav class="sidebar-nav">
                 <a href="admin.html"><i class="fa-solid fa-chart-simple fa-fw"></i><span>Dashboard</span></a>
                 <a href="#"><i class="fa-solid fa-shirt fa-fw"></i><span>Products</span></a>
                 <a href="#"><i class="fa-solid fa-bag-shopping fa-fw"></i><span>Orders</span></a>
-                <!--<a href="#"><i class="fa-solid fa-users fa-fw"></i><span>Customers</span></a>-->
+                i did not put this line in real <a href="#"><i class="fa-solid fa-users fa-fw"></i><span>Customers</span></a>
                 <a href="#"><i class="fa-solid fa-tags fa-fw"></i><span>Categories</span></a>
-            </nav>
+            </nav>-->
+
+            <nav class="sidebar-nav">
+    <button class="sidebar-dropdown-toggle" id="dashboardToggle">
+        <i class="fa-solid fa-chart-simple fa-fw"></i>
+        <span>Dashboard</span>
+        <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+    </button>
+    <div class="sidebar-submenu" id="dashboardSubmenu">
+        <a href="#"><i class="fa-solid fa-shirt fa-fw"></i><span>Products</span></a>
+        <a href="#"><i class="fa-solid fa-bag-shopping fa-fw"></i><span>Orders</span></a>
+        <a href="#"><i class="fa-solid fa-tags fa-fw"></i><span>Categories</span></a>
+    </div>
+</nav>
 
             <a href="index.html" class="sidebar-back">
                 <i class="fa-solid fa-arrow-left"></i><span>Back to Store</span>
@@ -192,7 +205,16 @@
         document.querySelectorAll('.sidebar-nav a').forEach(link => {
             link.addEventListener('click', closeSidebar);
         });
+
+        const dashboardToggle = document.getElementById('dashboardToggle');
+const dashboardSubmenu = document.getElementById('dashboardSubmenu');
+
+dashboardToggle.addEventListener('click', () => {
+    dashboardToggle.classList.toggle('submenu-open');
+    dashboardSubmenu.classList.toggle('submenu-open');
+});
     </script>
+    
 
 </body>
 </html>
