@@ -1023,6 +1023,7 @@ tbody tr:hover {
 /* ---------- Admin Responsive ---------- */
 @media (max-width: 1200px) and (min-width: 901px) {
     .admin-topbar {
+        padding-top: 40px;
         padding-bottom: 50px;
     }
 }
@@ -1032,6 +1033,7 @@ tbody tr:hover {
         display: block;
     }
      .admin-topbar {
+         padding-top: 40px;
         padding-bottom: 50px;
     }
 
@@ -1118,7 +1120,7 @@ tbody td::before {
         max-width: 280px;
     }
      .admin-topbar {
-        padding: 20px 5% 40px;
+        padding: 36px 5% 40px;
     }
 
     .admin-topbar .date {
