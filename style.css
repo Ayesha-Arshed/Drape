@@ -1021,9 +1021,18 @@ tbody tr:hover {
 }
 
 /* ---------- Admin Responsive ---------- */
+@media (max-width: 1200px) and (min-width: 901px) {
+    .admin-topbar {
+        padding-bottom: 50px;
+    }
+}
+
 @media (max-width: 900px) {
     .admin-hamburger {
         display: block;
+    }
+     .admin-topbar {
+        padding-bottom: 50px;
     }
 
     .sidebar {
@@ -1108,10 +1117,17 @@ tbody td::before {
         width: 80%;
         max-width: 280px;
     }
-
-    .admin-topbar {
-        padding: 20px 5%;
+     .admin-topbar {
+        padding: 20px 5% 40px;
     }
+
+    .admin-topbar .date {
+        margin-top: 8px;
+    }
+
+    /*.admin-topbar {
+        padding: 20px 5%;
+    }*/
 
     .admin-topbar h1 {
         font-size: 26px;
