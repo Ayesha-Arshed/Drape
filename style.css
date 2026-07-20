@@ -116,7 +116,8 @@ nav a.active-link::after {
 
 /* hero */
 .hero {
-    height: 90vh;
+    height: 75vh;
+    min-height: 550px;
     background-image: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
         url("https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1600");
     background-size: cover;
@@ -401,6 +402,13 @@ html, body {
 
 /* Tablet content adjustments */
 @media (max-width: 1024px) {
+     .hero {
+        height: 65vh;
+        min-height: 500px;
+    }
+    .hero-content {
+        width: 85%;
+    }
     .hero h1 {
         font-size: 52px;
     }
