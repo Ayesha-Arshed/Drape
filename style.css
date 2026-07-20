@@ -532,6 +532,7 @@ html, body {
 }
 
 /* Small phones */
+
 @media (max-width: 420px) {
     .hero h1 {
         font-size: 28px;
@@ -541,8 +542,37 @@ html, body {
     }
     header {
         padding: 0 4%;
+        height: 65px;
+    }
+    .hero {
+        height: 55vh;
+        min-height: 380px;
+    }
+    .hero-content {
+        width: 90%;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .icons {
+        font-size: 20px;
+        gap: 16px;
+    }
+    .hamburger {
+        font-size: 24px;
     }
 }
+/*@media (max-width: 420px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+    .section-title h2 {
+        font-size: 24px;
+    }
+    header {
+        padding: 0 4%;
+    }
+}*/
 
 /* ==================== ADMIN DASHBOARD ==================== */
 
