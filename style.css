@@ -361,7 +361,7 @@ html, body {
 
 /* Large tablet / small laptop */
 @media (max-width: 1100px) {
-    nav {
+    #main-nav {
         position: fixed;
         top: 70px;
         left: 0;
@@ -376,16 +376,16 @@ html, body {
         transition: max-height .4s ease;
         z-index: 998;
     }
-    nav.nav-open {
+     #main-nav.nav-open {
         max-height: 500px;
         padding: 10px 0;
         border-bottom: 1px solid #d5c1a7;
     }
-    nav a {
+    #main-nav a {
         width: 100%;
         padding: 14px 25px;
     }
-    nav a::after {
+    #main-nav a::after {
         display: none;
     }
 
@@ -424,19 +424,25 @@ html, body {
 
 /* Mobile */
 @media (max-width: 768px) {
-    .top-bar .elements {
+    /*.top-bar .elements {
         gap: 20px;
         overflow-x: auto;
         white-space: nowrap;
         padding: 0 15px;
         justify-content: flex-start;
         -webkit-overflow-scrolling: touch;
-    }
-    .top-bar .elements::-webkit-scrollbar {
+    }*/
+    .top-bar .elements {
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    justify-content: center;
+    padding: 0 15px;
+}
+   /* .top-bar .elements::-webkit-scrollbar {
         display: none;
-    }
+    }*/
     .top-bar {
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .logo {
@@ -540,7 +546,6 @@ html, body {
 
 /* ==================== ADMIN DASHBOARD ==================== */
 
-/* ---------- Layout ---------- */
 .admin-wrapper {
     display: flex;
     min-height: 100vh;
@@ -550,28 +555,30 @@ html, body {
 /* ---------- Sidebar ---------- */
 .sidebar {
     width: 250px;
-    background: #4A3728;
+    flex-shrink: 0;
+    background-color: #4A3728;
     color: #F5EBDD;
+    padding: 30px 0;
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
-    padding: 30px 0;
 }
+
 .sidebar-logo {
     font-family: 'Cormorant Garamond', serif;
     font-size: 28px;
     letter-spacing: 3px;
     font-weight: 600;
+    color: #F5EBDD;
     padding: 0 30px 30px;
     border-bottom: 1px solid rgba(245,235,221,.15);
     margin-bottom: 20px;
 }
+
 .sidebar-nav {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 4px;
 }
+
 .sidebar-nav a {
     display: flex;
     align-items: center;
@@ -579,30 +586,34 @@ html, body {
     padding: 13px 30px;
     font-size: 14px;
     letter-spacing: .5px;
-    color: rgba(245,235,221,.7);
+    color: #d9cdbd;
     border-left: 3px solid transparent;
-    transition: .3s;
 }
-.sidebar-nav a i {
-    text-align: center;
-    font-size: 15px;
-}
+
 .sidebar-nav a:hover {
     color: #F5EBDD;
-    background: rgba(245,235,221,.05);
+    background-color: rgba(245,235,221,.05);
 }
+
+.sidebar-nav a i {
+    width: 18px;
+    font-size: 15px;
+    text-align: center;
+    color: #d9cdbd;
+}
+
 .sidebar-back {
     display: flex;
     align-items: center;
     gap: 12px;
     padding: 20px 30px 0;
-    margin-top: 20px;
+    margin-top: auto;
     border-top: 1px solid rgba(245,235,221,.15);
     padding-top: 20px;
     font-size: 13px;
     color: rgba(245,235,221,.5);
-    transition: .3s;
 }
+
 .sidebar-back:hover {
     color: #C9A876;
 }
@@ -614,6 +625,7 @@ html, body {
     flex-direction: column;
     min-width: 0;
 }
+
 .admin-topbar {
     display: flex;
     justify-content: space-between;
@@ -622,26 +634,31 @@ html, body {
     background: #F5EBDD;
     border-bottom: 1px solid #d5c1a7;
 }
+
 .admin-topbar-left {
     display: flex;
     align-items: center;
     gap: 18px;
 }
+
 .admin-topbar h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 34px;
     color: #4A3728;
 }
+
 .admin-topbar .date {
     font-size: 13px;
     color: #8a7a68;
     margin-top: 4px;
 }
+
 .admin-profile {
     display: flex;
     align-items: center;
     gap: 14px;
 }
+
 .avatar {
     width: 42px;
     height: 42px;
@@ -655,14 +672,17 @@ html, body {
     font-size: 18px;
     font-weight: 600;
 }
+
 .profile-name {
     font-size: 14px;
     font-weight: 600;
 }
+
 .profile-role {
     font-size: 12px;
     color: #8a7a68;
 }
+
 .admin-content {
     width: 90%;
     margin: 50px auto;
@@ -672,23 +692,26 @@ html, body {
 .admin-section {
     margin-bottom: 60px;
 }
+
 .admin-section-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 24px;
 }
+
 .admin-section-title h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 30px;
     color: #4A3728;
 }
+
 .admin-section-title a {
     font-size: 14px;
     color: #A9835B;
     font-weight: 600;
-    transition: .3s;
 }
+
 .admin-section-title a:hover {
     color: #C9A876;
 }
@@ -700,10 +723,12 @@ html, body {
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0,0,0,.05);
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
 }
+
 thead th {
     text-align: left;
     font-size: 12px;
@@ -713,26 +738,28 @@ thead th {
     padding: 18px 24px;
     border-bottom: 1px solid #EFE4D2;
 }
+
 tbody td {
     padding: 16px 24px;
     font-size: 14px;
     border-bottom: 1px solid #EFE4D2;
 }
+
 tbody tr:last-child td {
     border-bottom: none;
 }
-tbody tr {
-    transition: .2s;
-}
+
 tbody tr:hover {
     background: #FAF4EA;
 }
+
 .product-cell {
     display: flex;
     align-items: center;
     gap: 14px;
     font-weight: 500;
 }
+
 .product-cell img {
     width: 44px;
     height: 44px;
@@ -740,7 +767,6 @@ tbody tr:hover {
     border-radius: 8px;
 }
 
-/* status dots */
 .status {
     display: inline-flex;
     align-items: center;
@@ -748,14 +774,15 @@ tbody tr:hover {
     font-size: 13px;
     font-weight: 500;
 }
+
 .status i {
     font-size: 8px;
 }
+
 .status.paid i { color: #6E7A5E; }
 .status.pending i { color: #C9A227; }
 .status.cancelled i { color: #A9835B; }
 
-/* buttons */
 .btn-add {
     background: #4A3728;
     color: #F5EBDD;
@@ -766,11 +793,12 @@ tbody tr:hover {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    transition: .3s;
 }
+
 .btn-add:hover {
     background: #A9835B;
 }
+
 .btn-edit {
     display: inline-flex;
     align-items: center;
@@ -780,15 +808,15 @@ tbody tr:hover {
     border-radius: 8px;
     border: 1px solid #d5c1a7;
     color: #4A3728;
-    transition: .3s;
 }
+
 .btn-edit:hover {
     background: #4A3728;
     color: #F5EBDD;
     border-color: #4A3728;
 }
 
-/* ---------- Admin hamburger (hidden by default, shown on mobile) ---------- */
+/* ---------- Hamburger + overlay (mobile only) ---------- */
 .admin-hamburger {
     display: none;
     background: none;
@@ -799,107 +827,140 @@ tbody tr:hover {
     padding: 0;
 }
 
-@media (max-width: 900px) {
-    .admin-hamburger {
-        position: fixed;
-        top: 30px;
-        left: 20px;
-        z-index: 1100;
-        background: #F5EBDD;
-        width: 40px;
-        height: 40px;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 2px 10px rgba(0,0,0,.1);
-    }
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.4);
+    z-index: 999;
+}
+
+.sidebar-overlay.overlay-visible {
+    display: block;
 }
 
 /* ---------- Admin Responsive ---------- */
 @media (max-width: 900px) {
+    .admin-hamburger {
+        display: block;
+    }
+
     .sidebar {
         position: fixed;
         top: 0;
         left: 0;
         height: 100vh;
-        width: 250px;
         transform: translateX(-100%);
-        transition: transform .35s ease;
+        transition: transform .3s ease;
         z-index: 1000;
-        box-shadow: 4px 0 20px rgba(0,0,0,.15);
-    }
-    .admin-topbar-left {
-    padding-left: 55px;
-}
-    .sidebar.sidebar-open {
-        transform: translateX(0);
     }
 
-    .admin-hamburger {
-        display: block;
+    .sidebar.sidebar-open {
+        transform: translateX(0);
     }
 
     .admin-content {
         width: 92%;
     }
-    .table-card {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
-table {
-    min-width: 500px;
-}
-thead th,
-tbody td {
-    padding: 12px 16px;
-    white-space: nowrap;
-}
-    table {
-        font-size: 12px;
+
+    /*.table-card {
+        overflow-x: auto;
     }
+
+    table {
+        min-width: 500px;
+    }
+
+    thead th,
+    tbody td {
+        padding: 12px 16px;
+        font-size: 12px;
+        white-space: nowrap;
+    }*/
+    thead {
+    display: none;
 }
 
-/* Small phones: sidebar takes most of the width instead of fixed 250px */
+table {
+    min-width: 0;
+}
+
+tbody tr {
+    display: block;
+    padding: 16px;
+    border-bottom: 1px solid #EFE4D2;
+}
+
+tbody td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: none;
+    font-size: 13px;
+    text-align: right;
+}
+
+tbody td::before {
+    content: attr(data-label);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #8a7a68;
+    font-weight: 600;
+    text-align: left;
+}
+
+.product-cell {
+    justify-content: flex-start !important;
+    gap: 10px;
+}
+
+.product-cell::before {
+    display: none;
+}
+    
+}
+
 @media (max-width: 480px) {
     .sidebar {
         width: 80%;
         max-width: 280px;
     }
+
     .admin-topbar {
         padding: 20px 5%;
     }
+
     .admin-topbar h1 {
         font-size: 26px;
     }
-    .admin-profile {
-        gap: 10px;
-    }
+
     .profile-name,
     .profile-role {
         display: none;
     }
+
     .admin-content {
-    width: 94%;
-    margin: 30px auto;
-}
-.admin-section {
-    margin-bottom: 40px;
-}
-.admin-section-title h2 {
-    font-size: 22px;
-}
-thead th,
-tbody td {
-    padding: 10px 14px;
-    font-size: 12px;
-}
-.product-cell img {
-    width: 36px;
-    height: 36px;
-}
-.btn-add {
-    padding: 9px 16px;
-    font-size: 12px;
-}
+        width: 94%;
+        margin: 30px auto;
+    }
+
+    .admin-section {
+        margin-bottom: 40px;
+    }
+
+    .admin-section-title h2 {
+        font-size: 22px;
+    }
+
+    .product-cell img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .btn-add {
+        padding: 9px 16px;
+        font-size: 12px;
+    }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drape — Admin</title>
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -13,15 +13,17 @@
 
     <div class="admin-wrapper">
 
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
         <!-- Sidebar -->
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-logo">DRAPE</div>
 
             <nav class="sidebar-nav">
-                <a href="#"><i class="fa-solid fa-chart-simple fa-fw"></i><span>Dashboard</span></a>
+                <a href="admin.html"><i class="fa-solid fa-chart-simple fa-fw"></i><span>Dashboard</span></a>
                 <a href="#"><i class="fa-solid fa-shirt fa-fw"></i><span>Products</span></a>
                 <a href="#"><i class="fa-solid fa-bag-shopping fa-fw"></i><span>Orders</span></a>
-                <a href="#"><i class="fa-solid fa-users fa-fw"></i><span>Customers</span></a>
+                <!--<a href="#"><i class="fa-solid fa-users fa-fw"></i><span>Customers</span></a>-->
                 <a href="#"><i class="fa-solid fa-tags fa-fw"></i><span>Categories</span></a>
             </nav>
 
@@ -74,32 +76,32 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>#DR-1042</td>
-                                    <td>Hira Malik</td>
-                                    <td>Jul 14, 2026</td>
-                                    <td>PKR 4,590</td>
-                                    <td><span class="status paid"><i class="fa-solid fa-circle"></i>Paid</span></td>
+                                    <td data-label="Order" >#DR-1042</td>
+                                    <td data-label="Customer">Hira Malik</td>
+                                    <td data-label="Date">Jul 14, 2026</td>
+                                    <td data-label="Total">PKR 4,590</td>
+                                    <td data-label="Status"><span class="status paid"><i class="fa-solid fa-circle"></i>Paid</span></td>
                                 </tr>
                                 <tr>
-                                    <td>#DR-1041</td>
-                                    <td>Zainab Farooq</td>
-                                    <td>Jul 14, 2026</td>
-                                    <td>PKR 2,150</td>
-                                    <td><span class="status pending"><i class="fa-solid fa-circle"></i>Pending</span></td>
+                                    <td   data-label="Order">#DR-1041</td>
+                                    <td  data-label="Customer">Zainab Farooq</td>
+                                    <td data-label="Date">Jul 14, 2026</td>
+                                    <td data-label="Total">PKR 2,150</td>
+                                    <td data-label="Status"><span class="status pending"><i class="fa-solid fa-circle"></i>Pending</span></td>
                                 </tr>
                                 <tr>
-                                    <td>#DR-1040</td>
-                                    <td>Bilal Ahmed</td>
-                                    <td>Jul 13, 2026</td>
-                                    <td>PKR 6,700</td>
-                                    <td><span class="status paid"><i class="fa-solid fa-circle"></i>Paid</span></td>
+                                    <td data-label="Order">#DR-1040</td>
+                                    <td data-label="Customer">Bilal Ahmed</td>
+                                    <td data-label="Date">Jul 13, 2026</td>
+                                    <td data-label="Total">PKR 6,700</td>
+                                    <td data-label="Status"><span class="status paid"><i class="fa-solid fa-circle"></i>Paid</span></td>
                                 </tr>
                                 <tr>
-                                    <td>#DR-1039</td>
-                                    <td>Areeba Khan</td>
-                                    <td>Jul 13, 2026</td>
-                                    <td>PKR 1,320</td>
-                                    <td><span class="status cancelled"><i class="fa-solid fa-circle"></i>Cancelled</span></td>
+                                    <td data-label="Order" >#DR-1039</td>
+                                    <td data-label="Customer" >Areeba Khan</td>
+                                    <td data-label="Date" >Jul 13, 2026</td>
+                                    <td data-label="Total" >PKR 1,320</td>
+                                    <td data-label="Status" ><span class="status cancelled"><i class="fa-solid fa-circle"></i>Cancelled</span></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -126,34 +128,34 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="product-cell">
+                                    <td class="product-cell"   data-label="Product" >
                                         <img src="girls.coat.jpg" alt="">
                                         Classic Beige Coat
                                     </td>
-                                    <td>Women</td>
-                                    <td>PKR 1,200</td>
-                                    <td>18</td>
-                                    <td><a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a></td>
+                                    <td  data-label="Category" >Women</td>
+                                    <td  data-label="Price" >PKR 1,200</td>
+                                    <td  data-label="Stock" >18</td>
+                                    <td  data-label="" ><a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a></td>
                                 </tr>
                                 <tr>
-                                    <td class="product-cell">
+                                    <td class="product-cell"  data-label="Product" >
                                         <img src="shirts.jpg" alt="">
                                         Minimal Shirt
                                     </td>
-                                    <td>Men</td>
-                                    <td>PKR 7,000</td>
-                                    <td>4</td>
-                                    <td><a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a></td>
+                                    <td data-label="Category" >Men</td>
+                                    <td data-label="Price" >PKR 7,000</td>
+                                    <td data-label="Stock" >4</td>
+                                    <td data-label="" ><a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a></td>
                                 </tr>
                                 <tr>
-                                    <td class="product-cell">
+                                    <td class="product-cell" data-label="Product" >
                                         <img src="sweater.jpg" alt="">
                                         Luxury Sweater
                                     </td>
-                                    <td>Women</td>
-                                    <td>PKR 9,500</td>
-                                    <td>27</td>
-                                    <td><a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a></td>
+                                    <td data-label="Category" >Women</td>
+                                    <td data-label="Price" >PKR 9,500</td>
+                                    <td data-label="Stock" >27</td>
+                                    <td data-label="" ><a href="#" class="btn-edit"><i class="fa-solid fa-pen"></i></a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -164,27 +166,33 @@
         </div>
     </div>
 
-   
     <script>
-    const adminHamburger = document.getElementById('adminHamburger');
-    const sidebar = document.getElementById('sidebar');
-    const hamburgerIcon = adminHamburger.querySelector('i');
+        const adminHamburger = document.getElementById('adminHamburger');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebarOverlay');
+        const hamburgerIcon = adminHamburger.querySelector('i');
 
-    adminHamburger.addEventListener('click', () => {
-        sidebar.classList.toggle('sidebar-open');
-        const isOpen = sidebar.classList.contains('sidebar-open');
-        hamburgerIcon.classList.toggle('fa-bars', !isOpen);
-        hamburgerIcon.classList.toggle('fa-xmark', isOpen);
-    });
-
-    document.querySelectorAll('.sidebar-nav a').forEach(link => {
-        link.addEventListener('click', () => {
+        function closeSidebar() {
             sidebar.classList.remove('sidebar-open');
+            overlay.classList.remove('overlay-visible');
             hamburgerIcon.classList.remove('fa-xmark');
             hamburgerIcon.classList.add('fa-bars');
+        }
+
+        function toggleSidebar() {
+            const isOpen = sidebar.classList.toggle('sidebar-open');
+            overlay.classList.toggle('overlay-visible', isOpen);
+            hamburgerIcon.classList.toggle('fa-bars', !isOpen);
+            hamburgerIcon.classList.toggle('fa-xmark', isOpen);
+        }
+
+        adminHamburger.addEventListener('click', toggleSidebar);
+        overlay.addEventListener('click', closeSidebar);
+
+        document.querySelectorAll('.sidebar-nav a').forEach(link => {
+            link.addEventListener('click', closeSidebar);
         });
-    });
-</script>
+    </script>
 
 </body>
 </html>
