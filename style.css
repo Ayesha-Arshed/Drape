@@ -1227,3 +1227,199 @@ tbody td::before {
     text-align: center;
     color: #d9cdbd;
 }
+/* ==========================================================
+   ABOUT PAGE
+   ========================================================== */
+.about-hero{
+    height:60vh;
+    min-height:420px;
+    background-image:
+    linear-gradient(rgba(43,37,33,.55),
+    rgba(43,37,33,.55)),
+    url("about.webp");
+    background-size:cover;
+    background-position:top center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+.about-hero-content{
+    width:80%;
+    max-width:700px;
+    color:white;
+    margin:auto;
+}
+.about-hero-content .small-title{
+    color:#EFE4D2;
+}
+.about-hero-content h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:60px;
+    line-height:1.15;
+}
+.about-hero-content .hero-text{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Story */
+.about-story{
+    display:grid;
+    grid-template-columns:1fr 1.1fr;
+    gap:70px;
+    align-items:center;
+}
+.about-story-image img{
+    border-radius:16px;
+    height:480px;
+    object-fit:cover;
+}
+.about-story-text .small-title{
+    color:#A9835B;
+}
+.about-story-text h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:42px;
+    color:#4A3728;
+    margin-bottom:20px;
+}
+.about-story-text p{
+    margin-bottom:18px;
+    color:#4A3728;
+    opacity:.85;
+    font-size:16px;
+}
+
+/* Values */
+.values{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+.value-card{
+    background:#EFE4D2;
+    border-radius:16px;
+    padding:40px 30px;
+    text-align:center;
+    transition:.35s ease;
+}
+.value-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+.value-card i{
+    font-size:30px;
+    color:#A9835B;
+    margin-bottom:20px;
+}
+.value-card h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:24px;
+    color:#4A3728;
+    margin-bottom:12px;
+}
+.value-card p{
+    font-size:14.5px;
+    color:#4A3728;
+    opacity:.8;
+}
+
+/* Stats */
+.stats{
+    background:#4A3728;
+    color:#F5EBDD;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    text-align:center;
+    padding:70px 8%;
+}
+.stat h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:52px;
+    color:#C9A876;
+    margin-bottom:8px;
+}
+.stat p{
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    font-size:13px;
+    color:rgba(245,235,221,.8);
+}
+
+/* Founder Quote */
+.founder-quote{
+    max-width:800px;
+    margin:0 auto;
+    text-align:center;
+}
+.founder-quote p{
+    font-family:'Cormorant Garamond',serif;
+    font-size:34px;
+    line-height:1.4;
+    color:#4A3728;
+    margin-bottom:25px;
+}
+.founder-quote span{
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:13px;
+    color:#A9835B;
+}
+
+/* ---------- About Page Responsive ---------- */
+@media (max-width:1024px){
+    .about-story{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+    .about-story-image img{
+        height:360px;
+    }
+    .values{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+        gap:40px;
+    }
+}
+
+@media (max-width:768px){
+    .about-hero{
+        height:auto;
+        padding:80px 0;
+    }
+    .about-hero-content h1{
+        font-size:38px;
+    }
+    .values{
+        grid-template-columns:1fr;
+    }
+    .value-card{
+        padding:35px 25px;
+    }
+    .stats{
+        grid-template-columns:1fr 1fr;
+        padding:50px 8%;
+    }
+    .stat h2{
+        font-size:40px;
+    }
+    .founder-quote p{
+        font-size:24px;
+    }
+}
+
+@media (max-width:420px){
+    .about-hero-content h1{
+        font-size:30px;
+    }
+    .stats{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+    .founder-quote p{
+        font-size:20px;
+    }
+}
