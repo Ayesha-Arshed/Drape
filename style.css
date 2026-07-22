@@ -1592,3 +1592,109 @@ tbody td::before {
         font-size:22px;
     }
 }
+/* ==========================================================
+   WOMEN PAGE
+   ========================================================== */
+.women-hero{
+    height:45vh;
+    min-height:320px;
+    background-image:
+    linear-gradient(rgba(43,37,33,.5),
+    rgba(43,37,33,.5)),
+    url("women collection.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.breadcrumb{
+    width:85%;
+    margin:30px auto 0;
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    display:flex;
+    gap:8px;
+}
+.breadcrumb a{
+    color:#8a7a6a;
+    transition:.3s;
+}
+.breadcrumb a:hover{
+    color:#A9835B;
+}
+.breadcrumb .current{
+    color:#4A3728;
+}
+
+.filter-bar{
+    width:85%;
+    margin:20px auto 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom:20px;
+    border-bottom:1px solid #d5c1a7;
+}
+.filter-count{
+    font-size:14px;
+    color:#4A3728;
+    opacity:.75;
+}
+.filter-sort{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:14px;
+}
+.filter-sort label{
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-size:12px;
+    color:#4A3728;
+}
+.filter-sort select{
+    padding:8px 14px;
+    border:1px solid #C9A876;
+    border-radius:6px;
+    background:#fff;
+    color:#4A3728;
+    font-family:'Inter',sans-serif;
+    font-size:14px;
+    cursor:pointer;
+    outline:none;
+}
+
+/* ---------- Women Page Responsive ---------- */
+@media (max-width:1024px){
+    .women-hero{
+        height:40vh;
+        min-height:280px;
+    }
+    .filter-bar{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:14px;
+    }
+}
+
+@media (max-width:768px){
+    .women-hero{
+        height:auto;
+        padding:70px 0;
+    }
+    .breadcrumb,
+    .filter-bar{
+        width:90%;
+    }
+}
+
+@media (max-width:420px){
+    .filter-count,
+    .filter-sort{
+        font-size:13px;
+    }
+}
