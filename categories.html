@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Drape</title>
+    <title>Categories | Drape</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -51,17 +51,21 @@
     </div>
 </div>
     
+
     <!--Header-->
     <header>
         <div class="logo">Drape</div>
-        <nav>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav id="main-nav">
             <a href="index.html">Home</a>
-            <a href="categories.html">Categories</a>
+            <a href="categories.html" >Categories</a>
             <a href="women.html">Women</a>
             <a href="man.html">Men</a>
             <a href="children.html">Children</a>
             <a href="new-arrivals.html">New Arrivals</a>
-            <a href="about.html" >About</a>
+            <a href="about.html">About</a>
             <a href="admin.html">Admin</a>
         </nav>
         <div class="icons">
@@ -71,100 +75,80 @@
         </div>
     </header>
 
-    <!--About Hero-->
-    <section class="about-hero">
+    <!--Categories Hero-->
+    <section class="category-hero">
         <div class="about-hero-content">
-            <p class="small-title">OUR STORY</p>
-            <h1>Crafted With Care, <br>Worn With Pride</h1>
+            <p class="small-title">EXPLORE</p>
+            <h1>Shop By Category</h1>
             <p class="hero-text">
-                Drape was born from a simple belief: that everyday clothing
-                deserves the same attention to detail as anything else you own.
+                From everyday essentials to statement pieces, find
+                exactly what you're looking for — sorted just for you.
             </p>
         </div>
     </section>
 
-    <!--Story Section-->
-    <section class="section">
-        <div class="about-story">
-            <div class="about-story-image">
-                <img src="sweater.jpg" alt="Drape craftsmanship">
-            </div>
-            <div class="about-story-text">
-                <p class="small-title">SINCE 2020</p>
-                <h2>A Quiet Beginning</h2>
-                <p>
-                    Drape started in a small studio with one goal in mind —
-                    to design pieces that feel as good ten years from now as
-                    they do the day you bring them home. No fast fashion,
-                    no fleeting trends. Just honest fabrics, thoughtful cuts,
-                    and a palette drawn from nature itself.
-                </p>
-                <p>
-                    Every collection is designed to be worn on repeat, mixed
-                    and matched effortlessly, and kept for years — not seasons.
-                    That's what quiet luxury means to us.
-                </p>
-            </div>
+    <!--Featured Banner - Women-->
+    <section class="category-banner">
+        <img src="women collection.jpg" alt="Women's Collection">
+        <div class="category-banner-overlay">
+            <p class="small-title">FEATURED</p>
+            <h2>Women's Collection</h2>
+            <p class="hero-text">Effortless silhouettes for every part of your day.</p>
+            <a href="#" class="btn-light">Shop Women</a>
         </div>
     </section>
 
-    <!--Values-->
-    <section class="section">
-        <div class="section-title">
-            <h2>What We Stand For</h2>
-        </div>
-        <div class="values">
-            <div class="value-card">
-                <i class="fa-solid fa-leaf"></i>
-                <h3>Sustainable Fabrics</h3>
-                <p>Sourced responsibly from mills committed to reducing water and energy waste.</p>
-            </div>
-            <div class="value-card">
-                <i class="fa-solid fa-hand-holding-heart"></i>
-                <h3>Ethical Craft</h3>
-                <p>Every stitch is made by artisans who are paid fairly and treated with respect.</p>
-            </div>
-            <div class="value-card">
-                <i class="fa-solid fa-clock-rotate-left"></i>
-                <h3>Made To Last</h3>
-                <p>Timeless silhouettes designed to outlive trends and stay in your wardrobe for years.</p>
-            </div>
-            <div class="value-card">
-                <i class="fa-solid fa-seedling"></i>
-                <h3>Mindful Growth</h3>
-                <p>We grow slowly and intentionally, choosing quality over speed at every step.</p>
-            </div>
+    <!--Featured Banner - Men-->
+    <section class="category-banner reverse">
+        <img src="men collection.jpg" alt="Men's Collection">
+        <div class="category-banner-overlay">
+            <p class="small-title">FEATURED</p>
+            <h2>Men's Collection</h2>
+            <p class="hero-text">Sharp, minimal, and built for everyday wear.</p>
+            <a href="#" class="btn-light">Shop Men</a>
         </div>
     </section>
 
-    <!--Stats-->
-    <section class="stats">
-        <div class="stat">
-            <h2>4+</h2>
-            <p>Years in Business</p>
-        </div>
-        <div class="stat">
-            <h2>50k+</h2>
-            <p>Happy Customers</p>
-        </div>
-        <div class="stat">
-            <h2>120+</h2>
-            <p>Curated Pieces</p>
-        </div>
-        <div class="stat">
-            <h2>15</h2>
-            <p>Countries Shipped</p>
+    <!--Featured Banner - Children-->
+    <section class="category-banner">
+        <img src="child category.webp" alt="Children's Collection">
+        <div class="category-banner-overlay">
+            <p class="small-title">FEATURED</p>
+            <h2>Children's Collection</h2>
+            <p class="hero-text">Playful, comfortable pieces made to keep up with them.</p>
+            <a href="#" class="btn-light">Shop Children</a>
         </div>
     </section>
 
-    <!--Founder Quote-->
-    <section class="section">
-        <div class="founder-quote">
-            <p>"We didn't want to build another fashion brand chasing trends.
-               We wanted to build one that respects your time, your money,
-               and your closet."</p>
-            <span>— Founder, Drape</span>
+    <!--Featured Banner - Accessories-->
+    <section class="category-banner reverse">
+        <img src="jewelery.png" alt="Accessories Collection">
+        <div class="category-banner-overlay">
+            <p class="small-title">FEATURED</p>
+            <h2>Accessories</h2>
+            <p class="hero-text">The finishing touches that pull every outfit together.</p>
+            <a href="#" class="btn-light">Shop Accessories</a>
         </div>
+    </section>
+
+    <!--Quick Links Strip-->
+    <section class="quick-links">
+        <a href="#">
+            <i class="fa-solid fa-child-reaching"></i>
+            <span>Kids</span>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-gem"></i>
+            <span>Accessories</span>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-star"></i>
+            <span>New Arrivals</span>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-tag"></i>
+            <span>Sale</span>
+        </a>
     </section>
 
     <!--Footer-->
@@ -198,6 +182,13 @@
         </div>
         <div class="copyright">© 2026 DRAPE. All Rights Reserved.</div>
     </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mainNav = document.getElementById('main-nav');
+        hamburgerBtn.addEventListener('click', () => {
+            mainNav.classList.toggle('nav-open');
+        });
+    </script>
 </body>
 </html>
-
