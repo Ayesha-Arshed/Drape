@@ -1802,3 +1802,52 @@ tbody td::before {
         gap:12px;
     }
 }
+/* ==========================================================
+   NEW ARRIVALS PAGE
+   ========================================================== */
+.new-arrivals-hero{
+    height:45vh;
+    min-height:320px;
+    background-image:
+    linear-gradient(rgba(43,37,33,.5),
+    rgba(43,37,33,.5)),
+    url("women collection.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.new-badge{
+    position:absolute;
+    top:16px;
+    left:16px;
+    z-index:2;
+
+    background:#4A3728;
+    color:#F5EBDD;
+
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+
+    padding:6px 14px;
+    border-radius:20px;
+}
+
+/* ---------- New Arrivals Page Responsive ---------- */
+@media (max-width:1024px){
+    .new-arrivals-hero{
+        height:40vh;
+        min-height:280px;
+    }
+}
+
+@media (max-width:768px){
+    .new-arrivals-hero{
+        height:auto;
+        padding:70px 0;
+    }
+}
