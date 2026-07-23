@@ -1755,3 +1755,50 @@ tbody td::before {
         gap:12px;
     }
 }
+
+/* ==========================================================
+   CHILDREN PAGE
+   ========================================================== */
+.children-hero{
+    height:45vh;
+    min-height:320px;
+    background-image:
+    linear-gradient(rgba(43,37,33,.5),
+    rgba(43,37,33,.5)),
+    url("child category.webp");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+/* ---------- Children Page Responsive ---------- */
+@media (max-width:1024px){
+    .children-hero{
+        height:40vh;
+        min-height:280px;
+    }
+    nav:not(#main-nav){
+        flex-wrap:wrap;
+        justify-content:center;
+        row-gap:12px;
+    }
+}
+
+@media (max-width:768px){
+    .children-hero{
+        height:auto;
+        padding:70px 0;
+    }
+    nav:not(#main-nav) a{
+        font-size:12px;
+    }
+}
+
+@media (max-width:480px){
+    nav:not(#main-nav){
+        gap:12px;
+    }
+}
