@@ -1971,3 +1971,106 @@ tbody td::before {
         font-size:12px;
     }
 }
+
+/* ==========================================================
+   FAVORITES PAGE
+   ========================================================== */
+.favorites-hero{
+    height:45vh;
+    min-height:320px;
+
+    background-image:
+    linear-gradient(rgba(43,37,33,.5),
+    rgba(43,37,33,.5)),
+    url("about.webp");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.clear-all{
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:#A9835B;
+    border-bottom:1px solid transparent;
+    transition:.3s;
+}
+
+.clear-all:hover{
+    border-bottom-color:#A9835B;
+}
+
+.fav-item{
+    position:relative;
+}
+
+.remove-fav{
+    position:absolute;
+    top:14px;
+    right:14px;
+    z-index:2;
+
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    border:none;
+
+    background:rgba(255,255,255,.9);
+    color:#4A3728;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+    font-size:13px;
+    transition:.3s;
+}
+
+.remove-fav:hover{
+    background:#4A3728;
+    color:#F5EBDD;
+}
+
+.empty-favorites{
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+
+    padding:80px 20px;
+}
+
+.empty-favorites i{
+    font-size:50px;
+    color:#C9A876;
+    margin-bottom:25px;
+}
+
+.empty-favorites h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:32px;
+    color:#4A3728;
+    margin-bottom:12px;
+}
+
+.empty-favorites p{
+    color:#4A3728;
+    opacity:.7;
+    max-width:380px;
+    margin-bottom:30px;
+}
+
+/* ---------- Favorites Page Responsive ---------- */
+@media (max-width:768px){
+    .favorites-hero{
+        height:auto;
+        padding:70px 0;
+    }
+}
