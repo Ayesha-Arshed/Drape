@@ -1700,3 +1700,58 @@ tbody td::before {
         font-size:13px;
     }
 }
+/* ==========================================================
+   MEN PAGE
+   ========================================================== */
+.men-hero{
+    height:45vh;
+    min-height:320px;
+    background-image:
+    linear-gradient(rgba(43,37,33,.5),
+    rgba(43,37,33,.5)),
+    url("men collection.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+/* ---------- Men Page Responsive ---------- */
+
+/* Tablet: plain nav (man.html has no hamburger) needs to wrap instead of overflow */
+@media (max-width:1024px){
+    .men-hero{
+        height:40vh;
+        min-height:280px;
+    }
+    nav:not(#main-nav){
+        flex-wrap:wrap;
+        justify-content:center;
+        row-gap:12px;
+    }
+}
+
+/* Mobile */
+@media (max-width:768px){
+    .men-hero{
+        height:auto;
+        padding:70px 0;
+    }
+    .elements{
+        gap:25px;
+        font-size:12px;
+        flex-wrap:wrap;
+    }
+    nav:not(#main-nav) a{
+        font-size:12px;
+    }
+}
+
+/* Small phones */
+@media (max-width:480px){
+    nav:not(#main-nav){
+        gap:12px;
+    }
+}
