@@ -261,10 +261,12 @@ nav a.active-link::after {
 /* products: 4 equal flex cards */
 .products {
     display: flex;
+     flex-wrap: wrap;
     gap: 25px;
 }
 .product {
-    flex: 1;
+   /* flex: 1;*/
+    flex: 1 1 calc(25% - 19px);
     background: #ffffff;
     border-radius: 16px;
     overflow: hidden;
