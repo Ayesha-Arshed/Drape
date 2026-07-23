@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search | Drape</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="marquee top-bar">
+    <div class="marquee-track">
+        <div class="marquee-set">
+            <span>Free Delivery</span>
+            <span>Premium Packaging</span>
+            <span>Easy Return</span>
+            <span>24/7 Customer Support</span>
+            <span>Free Delivery</span>
+            <span>Premium Packaging</span>
+            <span>Easy Return</span>
+            <span>24/7 Customer Support</span>
+            <span>Free Delivery</span>
+            <span>Premium Packaging</span>
+            <span>Easy Return</span>
+            <span>24/7 Customer Support</span>
+            <span>Free Delivery</span>
+            <span>Premium Packaging</span>
+            <span>Easy Return</span>
+            <span>24/7 Customer Support</span>
+        </div>
+        <div class="marquee-set" aria-hidden="true">
+            <span>Free Delivery</span>
+            <span>Premium Packaging</span>
+            <span>Easy Return</span>
+            <span>24/7 Customer Support</span>
+            <span>Free Delivery</span>
+            <span>Premium Packaging</span>
+            <span>Easy Return</span>
+            <span>24/7 Customer Support</span>
+            <span>Free Delivery</span>
+            <span>Premium Packaging</span>
+            <span>Easy Return</span>
+            <span>24/7 Customer Support</span>
+            <span>Free Delivery</span>
+            <span>Premium Packaging</span>
+            <span>Easy Return</span>
+            <span>24/7 Customer Support</span>
+        </div>
+    </div>
+</div>
+   
+
+    <!--Header-->
+    <header>
+        <div class="logo">Drape </div>
+         <nav>
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="women.html">Women</a>
+            <a href="man.html">Men</a>
+            <a href="children.html">Children</a>
+            <a href="new-arrivals.html">New Arrivals</a>
+            <a href="about.html">About</a>
+        </nav>
+         <div class="icons">
+            <a href="search.html" class="active-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="favorites.html"><i class="fa-regular fa-heart"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </header>
+
+    <!--Search Hero-->
+    <section class="search-hero">
+        <div class="about-hero-content">
+            <p class="small-title">FIND SOMETHING YOU LOVE</p>
+            <h1>Search Drape</h1>
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Search for coats, dresses, shirts...">
+            </div>
+
+            <div class="search-tags">
+                <span>Popular:</span>
+                <a href="#" class="search-tag">Coats</a>
+                <a href="#" class="search-tag">Dresses</a>
+                <a href="#" class="search-tag">Sweaters</a>
+                <a href="#" class="search-tag">Trousers</a>
+                <a href="#" class="search-tag">Accessories</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Results-->
+    <section class="section">
+        <div class="section-title">
+            <h2 id="resultsTitle">All Products</h2>
+        </div>
+
+        <div class="products" id="searchResults">
+
+            <div class="product" data-name="Classic Beige Coat">
+                <img src="girls.coat.jpg" alt="Classic Beige Coat">
+                <h3>Classic Beige Coat</h3>
+                <p>PKR 12,000</p>
+            </div>
+
+            <div class="product" data-name="Minimal Shirt">
+                <img src="shirts.jpg" alt="Minimal Shirt">
+                <h3>Minimal Shirt</h3>
+                <p>PKR 7,000</p>
+            </div>
+
+            <div class="product" data-name="Luxury Sweater">
+                <img src="sweater.jpg" alt="Luxury Sweater">
+                <h3>Luxury Sweater</h3>
+                <p>PKR 9,500</p>
+            </div>
+
+            <div class="product" data-name="Elegant Dress">
+                <img src="Untitled design (4).png" alt="Elegant Dress">
+                <h3>Elegant Dress</h3>
+                <p>PKR 14,000</p>
+            </div>
+
+            <div class="product" data-name="Wide Leg Trousers">
+                <img src="women collection.jpg" alt="Wide Leg Trousers">
+                <h3>Wide Leg Trousers</h3>
+                <p>PKR 8,500</p>
+            </div>
+
+            <div class="product" data-name="Wool Trousers">
+                <img src="men collection.jpg" alt="Wool Trousers">
+                <h3>Wool Trousers</h3>
+                <p>PKR 8,200</p>
+            </div>
+
+            <div class="product" data-name="Knit Sweater">
+                <img src="child category.webp" alt="Knit Sweater">
+                <h3>Knit Sweater</h3>
+                <p>PKR 4,200</p>
+            </div>
+
+            <div class="product" data-name="Layered Necklace">
+                <img src="jewelery.png" alt="Layered Necklace">
+                <h3>Layered Necklace</h3>
+                <p>PKR 3,200</p>
+            </div>
+
+        </div>
+
+        <p id="noResults" class="no-results">No products found. Try a different search term.</p>
+    </section>
+
+    <!--footer-->
+    <footer>    
+            <div class="footer-grid">
+                <div>
+                   <h2>DRAPE</h2>
+                   <p>Timeless fashion for
+                    modern living.
+                   </p>
+                </div>
+
+                <div>
+                    <h3>Shop</h3>
+                    <a href="#">Women</a>
+                    <a href="#">Men</a>
+                    <a href="#">Children</a>
+                    <a href="#">Sale</a>
+                    </div>
+
+                <div>
+                    <h3>Support</h3>
+                    <a href="#">Shipping</a>
+                    <a href="#">Returns</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Contact</a>
+
+                </div>
+
+                <div>
+                    <h3>Follow</h3>
+
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Pinterest</a>
+                    <a href="#">TikTok</a>
+
+                </div>
+            </div>
+
+            <div class="copyright"> © 2026 DRAPE. All Rights Reserved.</div>
+
+    </footer>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const products = document.querySelectorAll('#searchResults .product');
+        const resultsTitle = document.getElementById('resultsTitle');
+        const noResults = document.getElementById('noResults');
+
+        function filterProducts(query){
+            const term = query.trim().toLowerCase();
+            let visibleCount = 0;
+
+            products.forEach(product => {
+                const name = product.dataset.name.toLowerCase();
+                if(name.includes(term)){
+                    product.style.display = "block";
+                    visibleCount++;
+                } else {
+                    product.style.display = "none";
+                }
+            });
+
+            resultsTitle.textContent = term === "" ? "All Products" : `Results for "${query}"`;
+            noResults.style.display = visibleCount === 0 ? "block" : "none";
+        }
+
+        searchInput.addEventListener('input', (e) => {
+            filterProducts(e.target.value);
+        });
+
+        document.querySelectorAll('.search-tag').forEach(tag => {
+            tag.addEventListener('click', (e) => {
+                e.preventDefault();
+                searchInput.value = tag.textContent;
+                filterProducts(tag.textContent);
+                searchInput.focus();
+            });
+        });
+    </script>
+</body>
+</html>
