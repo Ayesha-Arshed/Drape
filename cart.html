@@ -54,8 +54,12 @@
 
     <!--Header-->
     <header>
+             
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
         <div class="logo">Drape </div>
-         <nav>
+         <nav  id="main-nav">
             <a href="index.html">Home</a>
             <a href="categories.html">Categories</a>
             <a href="women.html">Women</a>
@@ -69,6 +73,7 @@
             <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="favorites.html"><i class="fa-regular fa-heart"></i></a>
             <a href="cart.html" class="active-link"><i class="fa-solid fa-cart-shopping"></i></a>
+         
         </div>
     </header>
 
@@ -214,6 +219,20 @@
         const emptyCart = document.getElementById('emptyCart');
         const subtotalEl = document.getElementById('subtotal');
         const totalEl = document.getElementById('total');
+        const hamburger = document.getElementById('hamburger');
+const mainNav = document.getElementById('main-nav');
+
+hamburger.addEventListener('click', () => {
+    mainNav.classList.toggle('nav-open');
+    hamburger.classList.toggle('open');
+});
+
+document.querySelectorAll('#main-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        mainNav.classList.remove('nav-open');
+        hamburger.classList.remove('open');
+    });
+});
 
         function formatPKR(num){
             return "PKR " + num.toLocaleString('en-US');
