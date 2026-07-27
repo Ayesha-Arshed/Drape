@@ -2074,3 +2074,248 @@ tbody td::before {
         padding:70px 0;
     }
 }
+
+/* ==========================================================
+   CART PAGE
+   ========================================================== */
+
+.cart-breadcrumb{
+    margin-top:40px;
+}
+
+.cart-layout{
+    display:flex;
+    gap:50px;
+    align-items:flex-start;
+}
+
+.cart-items{
+    flex:2;
+}
+
+.cart-summary{
+    flex:1;
+}
+
+.cart-heading{
+    font-family:'Cormorant Garamond',serif;
+    font-size:36px;
+    color:#4A3728;
+    margin-bottom:30px;
+}
+
+.cart-item{
+    display:grid;
+    grid-template-columns:110px 1fr auto auto;
+    align-items:center;
+    gap:25px;
+
+    padding:25px 0;
+    border-bottom:1px solid #e3d5bd;
+}
+
+.cart-item img{
+    width:110px;
+    height:130px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.cart-item-info h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:22px;
+    color:#4A3728;
+    margin-bottom:6px;
+}
+
+.cart-item-meta{
+    font-size:13px;
+    color:#4A3728;
+    opacity:.65;
+    margin-bottom:12px;
+}
+
+.remove-item{
+    background:none;
+    border:none;
+    cursor:pointer;
+
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:#A9835B;
+
+    display:flex;
+    align-items:center;
+    gap:6px;
+    transition:.3s;
+}
+
+.remove-item:hover{
+    color:#8a5a3a;
+}
+
+.qty-control{
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    border:1px solid #d5c1a7;
+    border-radius:30px;
+    padding:8px 16px;
+}
+
+.qty-btn{
+    background:none;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+    color:#4A3728;
+    width:20px;
+}
+
+.qty-value{
+    font-size:14px;
+    color:#4A3728;
+    min-width:14px;
+    text-align:center;
+}
+
+.cart-item-price{
+    font-size:16px;
+    font-weight:600;
+    color:#4A3728;
+    min-width:110px;
+    text-align:right;
+}
+
+/* Order Summary */
+.cart-summary{
+    background:#EFE4D2;
+    border-radius:16px;
+    padding:35px;
+    position:sticky;
+    top:110px;
+}
+
+.cart-summary h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:26px;
+    color:#4A3728;
+    margin-bottom:25px;
+}
+
+.summary-row{
+    display:flex;
+    justify-content:space-between;
+    font-size:15px;
+    color:#4A3728;
+    opacity:.85;
+    margin-bottom:16px;
+}
+
+.total-row{
+    opacity:1;
+    font-weight:600;
+    font-size:18px;
+
+    padding-top:16px;
+    margin-top:6px;
+    border-top:1px solid #d5c1a7;
+}
+
+.checkout-btn{
+    display:block;
+    text-align:center;
+    margin-top:25px;
+}
+
+.continue-shopping{
+    display:block;
+    text-align:center;
+    margin-top:18px;
+
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:#A9835B;
+    transition:.3s;
+}
+
+.continue-shopping:hover{
+    color:#4A3728;
+}
+
+/* Empty Cart */
+.empty-cart{
+    display:none;
+    width:100%;
+
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+
+    padding:80px 20px;
+}
+
+.empty-cart i{
+    font-size:50px;
+    color:#C9A876;
+    margin-bottom:25px;
+}
+
+.empty-cart h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:32px;
+    color:#4A3728;
+    margin-bottom:12px;
+}
+
+.empty-cart p{
+    color:#4A3728;
+    opacity:.7;
+    max-width:380px;
+    margin-bottom:30px;
+}
+
+/* ---------- Cart Page Responsive ---------- */
+@media (max-width:1024px){
+    .cart-layout{
+        flex-direction:column;
+    }
+    .cart-summary{
+        position:static;
+        width:100%;
+    }
+}
+
+@media (max-width:768px){
+    .cart-item{
+        grid-template-columns:80px 1fr;
+        grid-template-areas:
+            "image info"
+            "image qty"
+            "image price";
+        row-gap:12px;
+    }
+
+    .cart-item img{
+        grid-area:image;
+        width:80px;
+        height:100px;
+    }
+
+    .cart-item-info{
+        grid-area:info;
+    }
+
+    .qty-control{
+        grid-area:qty;
+        width:fit-content;
+    }
+
+    .cart-item-price{
+        grid-area:price;
+        text-align:left;
+    }
+}
