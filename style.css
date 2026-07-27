@@ -391,7 +391,8 @@ footer {
 
 /* prevent any accidental horizontal scroll */
 html, body {
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
+    overflow-x: clip;
     width: 100%;
 }
 
@@ -2084,6 +2085,13 @@ tbody td::before {
 }
 
 .cart-layout{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:50px;
+    align-items:start;
+}
+
+/*.cart-layout{
     display:flex;
     gap:50px;
     align-items:flex-start;
@@ -2095,7 +2103,7 @@ tbody td::before {
 
 .cart-summary{
     flex:1;
-}
+}*/
 
 .cart-heading{
     font-family:'Cormorant Garamond',serif;
@@ -2281,13 +2289,23 @@ tbody td::before {
 /* ---------- Cart Page Responsive ---------- */
 @media (max-width:1024px){
     .cart-layout{
-        flex-direction:column;
+        grid-template-columns:1fr;
     }
     .cart-summary{
         position:static;
         width:100%;
     }
 }
+
+/*@media (max-width:1024px){
+    .cart-layout{
+        flex-direction:column;
+    }
+    .cart-summary{
+        position:static;
+        width:100%;
+    }
+}*/
 
 @media (max-width:768px){
     .cart-item{
