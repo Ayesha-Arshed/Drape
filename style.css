@@ -545,21 +545,28 @@ html, body {
         font-size: 28px;
     }
 
+    
+    /*.products,*/
     .categories,
-    .products,
     .testimonials {
         flex-direction: column;
     }
-    .category-card,
-    .product,
+    
+    /*.product,*/
+     .category-card,
     .testimonial {
         flex: 1 1 100%;
     }
+
+    .product {
+    flex: 1 1 calc(50% - 13px);
+}
     .category-card img {
         height: 260px;
     }
     .product img {
-        height: 320px;
+         height: 260px;
+        /*height: 320px;*/
     }
     .product h3 {
         font-size: 22px;
@@ -688,6 +695,12 @@ html, body {
 /* Small phones */
 
 @media (max-width: 420px) {
+    .product {
+    flex: 1 1 100%;
+}
+.product img {
+    height: 320px;
+}
     .hero h1 {
         font-size: 28px;
     }
