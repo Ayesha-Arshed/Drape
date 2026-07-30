@@ -695,12 +695,7 @@ html, body {
 /* Small phones */
 
 @media (max-width: 420px) {
-    .product {
-    flex: 1 1 100%;
-}
-.product img {
-    height: 320px;
-}
+    
     .hero h1 {
         font-size: 28px;
     }
