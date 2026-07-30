@@ -53,8 +53,12 @@
 
     <!--Header-->
     <header>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
         <div class="logo">Drape </div>
-         <nav>
+         <nav id="main-nav">
             <a href="index.html">Home</a>
             <a href="categories.html">Categories</a>
             <a href="women.html">Women</a>
@@ -209,5 +213,21 @@
             <div class="copyright"> © 2026 DRAPE. All Rights Reserved.</div>
 
     </footer>      
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('main-nav');
+
+    hamburger.addEventListener('click', () => {
+        mainNav.classList.toggle('nav-open');
+        hamburger.classList.toggle('open');
+    });
+
+    document.querySelectorAll('#main-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            mainNav.classList.remove('nav-open');
+            hamburger.classList.remove('open');
+        });
+    });
+</script>
 </body>
 </html>
