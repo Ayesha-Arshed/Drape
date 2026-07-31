@@ -466,6 +466,9 @@ html, body {
     .testimonial {
         flex: 1 1 calc(50% - 15px);
     }
+    .category-name {
+    font-size: 24px;
+}
 }
 
 /* Mobile */
@@ -547,18 +550,19 @@ html, body {
 
     
     /*.products,*/
-    .categories,
+    /*.categories,*/
     .testimonials {
         flex-direction: column;
     }
     
     /*.product,*/
-     .category-card,
+     /*.category-card,*/
     .testimonial {
         flex: 1 1 100%;
     }
 
-    .product {
+    .product,
+     .category-card {
     flex: 1 1 calc(50% - 13px);
 }
     .category-card img {
@@ -706,6 +710,9 @@ html, body {
         padding: 0 4%;
         height: 65px;
     }
+    .category-name {
+    font-size: 20px;
+}
     /*.hero {
         height: 55vh;
         min-height: 380px;
