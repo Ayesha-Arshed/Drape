@@ -2352,3 +2352,112 @@ tbody td::before {
         text-align:left;
     }
 }
+
+/* ==========================================================
+   ACCESSORIES PAGE
+   ========================================================== */
+.accessories-hero{
+    height:45vh;
+    min-height:320px;
+    background-image:
+    linear-gradient(rgba(43,37,33,.5),
+    rgba(43,37,33,.5)),
+    url("jeweleryhero.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+/* ---------- Accessories Page Responsive ---------- */
+@media (max-width:1024px){
+    .accessories-hero{
+        height:40vh;
+        min-height:280px;
+    }
+}
+
+@media (max-width:768px){
+    .accessories-hero{
+        height:auto;
+        padding:70px 0;
+    }
+}
+
+/* ==========================================================
+   SALE PAGE
+   ========================================================== */
+.sale-hero{
+    height:45vh;
+    min-height:320px;
+    background-image:
+    linear-gradient(rgba(43,37,33,.5),
+    rgba(43,37,33,.5)),
+    url("saleimage.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.sale-hero .about-hero-content{
+    color:#F5EBDD;
+}
+
+.sale-hero .small-title{
+    color:#C9A876;
+}
+
+.sale-hero h1{
+    font-family:'Cormorant Garamond',serif;
+}
+
+.sale-badge{
+    position:absolute;
+    top:16px;
+    left:16px;
+    z-index:2;
+
+    background:#A9835B;
+    color:#F5EBDD;
+
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    font-weight:600;
+
+    padding:6px 14px;
+    border-radius:20px;
+}
+
+.sale-price{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.original-price{
+    text-decoration:line-through;
+    color:#8a7a68;
+    font-weight:400;
+    font-size:14px;
+}
+
+/* ---------- Sale Page Responsive ---------- */
+@media (max-width:1024px){
+    .sale-hero{
+        height:40vh;
+        min-height:280px;
+    }
+}
+
+@media (max-width:768px){
+    .sale-hero{
+        height:auto;
+        padding:70px 0;
+    }
+}
