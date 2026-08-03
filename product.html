@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | Drape</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="marquee top-bar">
+    <div class="marquee-track">
+        <div class="marquee-set">
+            <span>Free Delivery</span>
+            <span>Premium Packaging</span>
+            <span>Easy Return</span>
+            <span>24/7 Customer Support</span>
+            <span>Free Delivery</span>
+            <span>Premium Packaging</span>
+            <span>Easy Return</span>
+            <span>24/7 Customer Support</span>
+            <span>Free Delivery</span>
+            <span>Premium Packaging</span>
+            <span>Easy Return</span>
+            <span>24/7 Customer Support</span>
+            <span>Free Delivery</span>
+            <span>Premium Packaging</span>
+            <span>Easy Return</span>
+            <span>24/7 Customer Support</span>
+        </div>
+        <div class="marquee-set" aria-hidden="true">
+            <span>Free Delivery</span>
+            <span>Premium Packaging</span>
+            <span>Easy Return</span>
+            <span>24/7 Customer Support</span>
+            <span>Free Delivery</span>
+            <span>Premium Packaging</span>
+            <span>Easy Return</span>
+            <span>24/7 Customer Support</span>
+            <span>Free Delivery</span>
+            <span>Premium Packaging</span>
+            <span>Easy Return</span>
+            <span>24/7 Customer Support</span>
+            <span>Free Delivery</span>
+            <span>Premium Packaging</span>
+            <span>Easy Return</span>
+            <span>24/7 Customer Support</span>
+        </div>
+    </div>
+</div>
+
+    <!--Header-->
+    <header>
+          <button class="hamburger" id="hamburger" aria-label="Menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+        <div class="logo">Drape </div>
+         <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="women.html">Women</a>
+            <a href="man.html">Men</a>
+            <a href="children.html">Children</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="new-arrivals.html">New Arrivals</a>
+            <a href="sale.html">Sale</a>
+            <a href="about.html">About</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+         <div class="icons">
+            <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="favorites.html"><i class="fa-regular fa-heart"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </header>
+
+    <!--Breadcrumb-->
+    <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="categories.html">Categories</a>
+        <span>/</span>
+        <span class="current" id="crumb-product">Product</span>
+    </div>
+
+    <!--Product-->
+    <section class="section">
+        <div class="product-layout">
+
+            <!-- Gallery -->
+            <div class="product-gallery">
+                <div class="product-gallery-main">
+                    <img id="main-image" src="" alt="Product image">
+                </div>
+                <div class="product-thumbs" id="thumb-row">
+                    <!-- thumbs injected by JS -->
+                </div>
+            </div>
+
+            <!-- Info -->
+            <div class="product-info-panel">
+                <p class="small-title" id="product-category">CATEGORY</p>
+                <h1 id="product-name">Product Name</h1>
+                <div class="product-price" id="product-price">PKR 0</div>
+                <p class="product-desc" id="product-desc">Description goes here.</p>
+
+                <p class="product-option-label">Select Size</p>
+                <div class="size-options" id="size-row">
+                    <!-- sizes injected by JS -->
+                </div>
+
+                <div class="product-actions">
+                    <div class="qty-control">
+                        <button class="qty-btn" id="qty-minus">−</button>
+                        <span class="qty-value" id="qty-value">1</span>
+                        <button class="qty-btn" id="qty-plus">+</button>
+                    </div>
+                    <button class="add-to-cart-btn" id="add-to-cart">Add to Cart</button>
+                    <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                </div>
+
+                <ul class="product-meta-list">
+                    <li><i class="fa-solid fa-truck"></i> Free delivery on all orders</li>
+                    <li><i class="fa-solid fa-rotate-left"></i> Easy returns within 7 days</li>
+                    <li><i class="fa-solid fa-box"></i> Premium packaging included</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Related Products-->
+    <section class="section">
+        <h2 class="related-title">You May Also Like</h2>
+        <div class="products" id="related-products">
+            <!-- related products injected by JS -->
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>    
+            <div class="footer-grid">
+                <div>
+                   <h2>DRAPE</h2>
+                   <p>Timeless fashion for
+                    modern living.
+                   </p>
+                </div>
+
+                <div>
+                    <h3>Shop</h3>
+                    <a href="women.html">Women</a>
+                    <a href="man.html">Men</a>
+                    <a href="children.html">Children</a>
+                    <a href="sale.html">Sale</a>
+                    </div>
+
+                <div>
+                    <h3>Support</h3>
+                    <a href="shipping-returns.html">Shipping</a>
+                    <a href="shipping-returns.html">Returns</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="contact.html">Contact</a>
+
+                </div>
+
+                <div>
+                    <h3>Follow</h3>
+
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Pinterest</a>
+                    <a href="#">TikTok</a>
+
+                </div>
+            </div>
+
+            <div class="copyright"> © 2026 DRAPE. All Rights Reserved.</div>
+
+    </footer>   
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const mainNav = document.getElementById('main-nav');
+
+    hamburger.addEventListener('click', () => {
+        mainNav.classList.toggle('nav-open');
+        hamburger.classList.toggle('open');
+    });
+
+    document.querySelectorAll('#main-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            mainNav.classList.remove('nav-open');
+            hamburger.classList.remove('open');
+        });
+    });
+
+    // ---------- Product data ----------
+    // Add more products here as needed. "images" can repeat the same file
+    // if you only have one photo per product right now.
+    const products = {
+        "1": {
+            name: "Tailored Overcoat",
+            category: "MEN",
+            price: "PKR 15,500",
+            images: ["man.jpg", "men collection.jpg"],
+            sizes: ["S", "M", "L", "XL"],
+            description: "A sharp, minimal overcoat cut from premium wool blend fabric. Built for everyday wear with a tailored silhouette that layers effortlessly over any outfit.",
+            related: ["2", "3", "4"]
+        },
+        "2": {
+            name: "Minimal Shirt",
+            category: "MEN",
+            price: "PKR 6,500",
+            images: ["shirts.jpg", "man.jpg"],
+            sizes: ["S", "M", "L", "XL"],
+            description: "A clean, versatile shirt in breathable cotton. Designed to move easily from desk to dinner without losing its shape.",
+            related: ["1", "3", "5"]
+        },
+        "3": {
+            name: "Merino Sweater",
+            category: "MEN",
+            price: "PKR 9,800",
+            images: ["sweater.jpg", "men collection.jpg"],
+            sizes: ["S", "M", "L", "XL"],
+            description: "Soft merino wool knit sweater, warm without the bulk. A cold-weather staple that pairs with almost anything in your wardrobe.",
+            related: ["1", "2", "4"]
+        },
+        "4": {
+            name: "Wrap Dress",
+            category: "WOMEN",
+            price: "PKR 11,000",
+            images: ["women collection.jpg", "Untitled design (4).png"],
+            sizes: ["XS", "S", "M", "L"],
+            description: "An elegant wrap dress in flowing fabric, cinched at the waist for a flattering silhouette. Perfect for both daytime and evening occasions.",
+            related: ["5", "6", "1"]
+        },
+        "5": {
+            name: "Elegant Dress",
+            category: "WOMEN",
+            price: "PKR 14,000",
+            images: ["Untitled design (4).png", "women collection.jpg"],
+            sizes: ["XS", "S", "M", "L"],
+            description: "A statement piece designed for special occasions, with delicate detailing and a refined fit that moves beautifully.",
+            related: ["4", "6", "2"]
+        },
+        "6": {
+            name: "Leather Tote Bag",
+            category: "ACCESSORIES",
+            price: "PKR 9,200",
+            images: ["access.jpg"],
+            sizes: ["One Size"],
+            description: "A spacious leather tote built to last, with clean lines and enough room for everyday essentials. The finishing touch to any outfit.",
+            related: ["4", "5", "3"]
+        }
+    };
+
+    // ---------- Read product id from URL ----------
+    const params = new URLSearchParams(window.location.search);
+    const productId = params.get('id') || "1";
+    const product = products[productId] || products["1"];
+
+    let currentQty = 1;
+    let selectedSize = product.sizes[0];
+
+    // Populate basic info
+    document.getElementById('product-category').textContent = product.category;
+    document.getElementById('product-name').textContent = product.name;
+    document.getElementById('product-price').textContent = product.price;
+    document.getElementById('product-desc').textContent = product.description;
+    document.getElementById('crumb-product').textContent = product.name;
+    document.title = product.name + " | Drape";
+
+    // Gallery
+    const mainImage = document.getElementById('main-image');
+    const thumbRow = document.getElementById('thumb-row');
+    mainImage.src = product.images[0];
+    mainImage.alt = product.name;
+
+    product.images.forEach((img, index) => {
+        const thumb = document.createElement('div');
+        thumb.className = 'product-thumb' + (index === 0 ? ' active-thumb' : '');
+        thumb.innerHTML = `<img src="${img}" alt="${product.name} view ${index + 1}">`;
+        thumb.addEventListener('click', () => {
+            mainImage.src = img;
+            document.querySelectorAll('.product-thumb').forEach(t => t.classList.remove('active-thumb'));
+            thumb.classList.add('active-thumb');
+        });
+        thumbRow.appendChild(thumb);
+    });
+
+    // Sizes
+    const sizeRow = document.getElementById('size-row');
+    product.sizes.forEach((size, index) => {
+        const btn = document.createElement('button');
+        btn.className = 'size-option' + (index === 0 ? ' active-size' : '');
+        btn.textContent = size;
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.size-option').forEach(b => b.classList.remove('active-size'));
+            btn.classList.add('active-size');
+            selectedSize = size;
+        });
+        sizeRow.appendChild(btn);
+    });
+
+    // Quantity
+    const qtyValue = document.getElementById('qty-value');
+    document.getElementById('qty-minus').addEventListener('click', () => {
+        if (currentQty > 1) {
+            currentQty--;
+            qtyValue.textContent = currentQty;
+        }
+    });
+    document.getElementById('qty-plus').addEventListener('click', () => {
+        currentQty++;
+        qtyValue.textContent = currentQty;
+    });
+
+    // Add to cart (placeholder — no backend/cart storage yet)
+    document.getElementById('add-to-cart').addEventListener('click', () => {
+        alert(`Added ${currentQty} × ${product.name} (Size: ${selectedSize}) to cart.`);
+    });
+
+    // Related products
+    const relatedContainer = document.getElementById('related-products');
+    product.related.forEach(relId => {
+        const relProduct = products[relId];
+        if (!relProduct) return;
+        const card = document.createElement('a');
+        card.href = `product.html?id=${relId}`;
+        card.className = 'product';
+        card.style.display = 'block';
+        card.innerHTML = `
+            <img src="${relProduct.images[0]}" alt="${relProduct.name}">
+            <h3>${relProduct.name}</h3>
+            <p>${relProduct.price}</p>
+        `;
+        relatedContainer.appendChild(card);
+    });
+</script>   
+</body>
+</html>
