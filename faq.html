@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Men | Drape</title>
+    <title>FAQ | Drape</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -50,7 +50,6 @@
         </div>
     </div>
 </div>
-    
 
     <!--Header-->
     <header>
@@ -62,9 +61,11 @@
             <a href="index.html">Home</a>
             <a href="categories.html">Categories</a>
             <a href="women.html">Women</a>
-            <a href="man.html" >Men</a>
+            <a href="man.html">Men</a>
             <a href="children.html">Children</a>
+            <a href="accessories.html">Accessories</a>
             <a href="new-arrivals.html">New Arrivals</a>
+            <a href="sale.html">Sale</a>
             <a href="about.html">About</a>
             <a href="admin.html">Admin</a>
         </nav>
@@ -75,15 +76,15 @@
         </div>
     </header>
 
-    <!--Men Hero-->
-    <section class="men-hero">
+    <!--FAQ Hero-->
+    <section class="faq-hero">
         <div class="about-hero-content">
-            <p class="small-title">MEN</p>
+            <p class="small-title">SUPPORT</p>
             <h1>
-                The Men's Edit
+                Frequently Asked Questions
             </h1>
             <p class="hero-text">
-                Sharp, minimal, and built for everyday wear — pieces made to last.
+                Everything you need to know about orders, shipping, and returns.
             </p>
         </div>
     </section>
@@ -92,76 +93,75 @@
     <div class="breadcrumb">
         <a href="index.html">Home</a>
         <span>/</span>
-        <a href="categories.html">Categories</a>
-        <span>/</span>
-        <span class="current">Men</span>
+        <span class="current">FAQ</span>
     </div>
 
-    <!--Filter Bar-->
-    <div class="filter-bar">
-        <div class="filter-count">18 Products</div>
-        <div class="filter-sort">
-            <label for="sort">Sort By</label>
-            <select id="sort" name="sort">
-                <option>Newest</option>
-                <option>Price: Low to High</option>
-                <option>Price: High to Low</option>
-                <option>Most Popular</option>
-            </select>
-        </div>
-    </div>
-
-    <!--Products-->
+    <!--FAQ Content-->
     <section class="section">
-        <div class="products">
+        <div class="faq-list">
 
-            <div class="product">
-                <img src="man.jpg" alt="Tailored Overcoat">
-                <h3>Tailored Overcoat</h3>
-                <p>PKR 15,500</p>
-            </div>
+            <h2 class="faq-category">Orders</h2>
 
-            <div class="product">
-                <img src="shirts.jpg" alt="Minimal Shirt">
-                <h3>Minimal Shirt</h3>
-                <p>PKR 6,500</p>
-            </div>
+            <details class="faq-item">
+                <summary>How do I place an order?</summary>
+                <p>Simply browse our collections, add your chosen pieces to the cart, and follow the checkout steps. You'll receive a confirmation once your order is placed.</p>
+            </details>
 
-            <div class="product">
-                <img src="sweater.jpg" alt="Merino Sweater">
-                <h3>Merino Sweater</h3>
-                <p>PKR 9,800</p>
-            </div>
+            <details class="faq-item">
+                <summary>Can I change or cancel my order after placing it?</summary>
+                <p>If your order hasn't been processed yet, contact us as soon as possible and we'll do our best to accommodate changes or cancellations.</p>
+            </details>
 
-            <div class="product">
-                <img src="men collection.jpg" alt="Wool Trousers">
-                <h3>Wool Trousers</h3>
-                <p>PKR 8,200</p>
-            </div>
+            <details class="faq-item">
+                <summary>Do you offer gift wrapping?</summary>
+                <p>Yes, all our pieces come in premium packaging by default, and gift wrapping can be requested at checkout.</p>
+            </details>
 
-            <div class="product">
-                <img src="man.jpg" alt="Linen Blazer">
-                <h3>Linen Blazer</h3>
-                <p>PKR 12,900</p>
-            </div>
+            <h2 class="faq-category">Shipping</h2>
 
-            <div class="product">
-                <img src="shirts.jpg" alt="Oxford Shirt">
-                <h3>Oxford Shirt</h3>
-                <p>PKR 7,400</p>
-            </div>
+            <details class="faq-item">
+                <summary>How long does delivery take?</summary>
+                <p>Standard delivery typically takes 3–5 business days. You'll receive tracking details as soon as your order ships.</p>
+            </details>
 
-            <div class="product">
-                <img src="sweater.jpg" alt="Crew Neck Knit">
-                <h3>Crew Neck Knit</h3>
-                <p>PKR 8,900</p>
-            </div>
+            <details class="faq-item">
+                <summary>Do you offer free delivery?</summary>
+                <p>Yes, we offer free delivery on all orders, no minimum spend required.</p>
+            </details>
 
-            <div class="product">
-                <img src="men collection.jpg" alt="Chino Pants">
-                <h3>Chino Pants</h3>
-                <p>PKR 7,800</p>
-            </div>
+            <details class="faq-item">
+                <summary>Which areas do you deliver to?</summary>
+                <p>We currently deliver across Pakistan. International shipping options are coming soon.</p>
+            </details>
+
+            <h2 class="faq-category">Returns & Exchanges</h2>
+
+            <details class="faq-item">
+                <summary>What is your return policy?</summary>
+                <p>We offer easy returns within 7 days of delivery, provided items are unworn, unwashed, and in original packaging with tags attached.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>How do I start a return?</summary>
+                <p>Go to your order history and select "Request Return", or contact our support team directly and we'll guide you through the process.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Can I exchange an item for a different size?</summary>
+                <p>Yes, exchanges are available subject to stock. Reach out to our support team with your order number to arrange it.</p>
+            </details>
+
+            <h2 class="faq-category">Support</h2>
+
+            <details class="faq-item">
+                <summary>How can I contact customer support?</summary>
+                <p>Our team is available 24/7 through the Contact page, or you can reach us via our social channels linked in the footer.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Do you have a physical store?</summary>
+                <p>At the moment, Drape operates exclusively online, allowing us to bring you the best prices and a wider selection.</p>
+            </details>
 
         </div>
     </section>
@@ -178,20 +178,19 @@
 
                 <div>
                     <h3>Shop</h3>
-                     <a href="women.html">Women</a>
-                <a href="man.html">Men</a>
-                <a href="children.html">Children</a>
-                <a href="sale.html">Sale</a>
-
+                    <a href="women.html">Women</a>
+                    <a href="man.html">Men</a>
+                    <a href="children.html">Children</a>
+                    <a href="sale.html">Sale</a>
                     </div>
 
                 <div>
                     <h3>Support</h3>
                     <a href="#">Shipping</a>
                     <a href="#">Returns</a>
+                   
                     <a href="faq.html">FAQ</a>
                     <a href="contact.html">Contact</a>
-               
 
                 </div>
 
@@ -200,7 +199,6 @@
 
                     <a href="#">Instagram</a>
                     <a href="#">Facebook</a>
-                    
                     <a href="#">TikTok</a>
 
                 </div>
